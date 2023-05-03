@@ -43,10 +43,8 @@ namespace Supermarker_mvp.Views
 		public event EventHandler SaveEvent;
 		public event EventHandler CanceledEvent;
 
-		public void SetPayModeListBildingSource(BindingSource payModeList)
-		{
-			DgPayMode.DataSource = payModeList;
-		}
+		
+
 
 		public string PayModeId
 		{
@@ -88,6 +86,28 @@ namespace Supermarker_mvp.Views
 			get { return message; }
 			set { message = value; }
 
+		}
+		public void SetPayModeListBildingSource(BindingSource payModeList)
+		{
+			DgPayMode.DataSource = payModeList;
+		}
+		private static PayModeView instance;
+
+		public static PayModeView GetInstance()
+		{
+			if (instance == null || instance.IsDisposed)
+			{
+				instance = new PayModeView();
+			}
+			else
+			{
+				if (instance.WindowState == FormWindowState.Maximized)
+				{
+					instance.WindowState = FormWindowState.Normal;
+				}
+				instance.BringToFront();
+			}
+			return instance;
 		}
 
 	}
