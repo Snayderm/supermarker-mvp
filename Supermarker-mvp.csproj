@@ -10,7 +10,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Presenters\" />
     <Folder Include="_Repositories\" />
   </ItemGroup>
 

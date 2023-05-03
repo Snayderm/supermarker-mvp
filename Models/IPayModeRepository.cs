@@ -13,6 +13,6 @@ namespace Supermarker_mvp.Models
 		void Delete(int id);
 
 		IEnumerable<PayModeModel> GetAll();
-		IEnumerable<PayModeModel> GetByVakue(string value);
+		IEnumerable<PayModeModel> GetByValue(string value);
 	}
 }

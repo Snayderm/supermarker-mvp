@@ -42,14 +42,14 @@
 			TxtSearch = new TextBox();
 			Label = new Label();
 			tabPagePayModeDetail = new TabPage();
+			BtnCancel = new Button();
+			BtnSave = new Button();
 			label4 = new Label();
 			label3 = new Label();
 			TxtPayModeObservation = new TextBox();
 			TxtPayModeName = new TextBox();
 			TxtPayModeId = new TextBox();
 			label2 = new Label();
-			BtnSave = new Button();
-			BtnCancel = new Button();
 			panel1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
 			TabControl.SuspendLayout();
@@ -210,6 +210,24 @@
 			tabPagePayModeDetail.Text = "Pay Mode Detail";
 			tabPagePayModeDetail.UseVisualStyleBackColor = true;
 			// 
+			// BtnCancel
+			// 
+			BtnCancel.Image = Properties.Resources.cancel;
+			BtnCancel.Location = new Point(134, 254);
+			BtnCancel.Name = "BtnCancel";
+			BtnCancel.Size = new Size(75, 42);
+			BtnCancel.TabIndex = 7;
+			BtnCancel.UseVisualStyleBackColor = true;
+			// 
+			// BtnSave
+			// 
+			BtnSave.Image = Properties.Resources.save;
+			BtnSave.Location = new Point(26, 254);
+			BtnSave.Name = "BtnSave";
+			BtnSave.Size = new Size(75, 42);
+			BtnSave.TabIndex = 6;
+			BtnSave.UseVisualStyleBackColor = true;
+			// 
 			// label4
 			// 
 			label4.AutoSize = true;
@@ -263,24 +281,6 @@
 			label2.Size = new Size(75, 15);
 			label2.TabIndex = 0;
 			label2.Text = "Pay Mode Id";
-			// 
-			// BtnSave
-			// 
-			BtnSave.Image = Properties.Resources.save;
-			BtnSave.Location = new Point(26, 254);
-			BtnSave.Name = "BtnSave";
-			BtnSave.Size = new Size(75, 42);
-			BtnSave.TabIndex = 6;
-			BtnSave.UseVisualStyleBackColor = true;
-			// 
-			// BtnCancel
-			// 
-			BtnCancel.Image = Properties.Resources.cancel;
-			BtnCancel.Location = new Point(134, 254);
-			BtnCancel.Name = "BtnCancel";
-			BtnCancel.Size = new Size(75, 42);
-			BtnCancel.TabIndex = 7;
-			BtnCancel.UseVisualStyleBackColor = true;
 			// 
 			// PayModeView
 			// 
